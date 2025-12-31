@@ -1,0 +1,8 @@
+This is a random test text
+I use it to practice file reading in functions
+
+This is the end of the file!!!
+
+Even for    particular. Chars?
+
+Bu.t doe?s it han??dle this (NO)

@@ -1,0 +1,19 @@
+2025-11-15 22:55:00-ArithmethicApp-DEBUG-Adding 10 + 15 = 25
+2025-11-15 22:55:00-ArithmethicApp-DEBUG-Subtract 15 - 10 = 5
+2025-11-15 22:55:00-ArithmethicApp-DEBUG-AddMultiply 10 * 20 = 200
+2025-11-15 22:55:00-ArithmethicApp-DEBUG-Divide 20 / 10 = 2.0
+2025-11-15 22:55:00-ArithmethicApp-ERROR-Generic error
+2025-11-15 22:55:00-ArithmethicApp-ERROR-Division by zero error
+2025-11-15 22:55:00-ArithmethicApp-ERROR-Generic error
+2025-11-15 22:55:55-ArithmethicApp-DEBUG-Adding 10 + 15 = 25
+2025-11-15 22:55:55-ArithmethicApp-DEBUG-Subtract 15 - 10 = 5
+2025-11-15 22:55:55-ArithmethicApp-DEBUG-AddMultiply 10 * 20 = 200
+2025-11-15 22:55:55-ArithmethicApp-DEBUG-Divide 20 / 10 = 2.0
+2025-11-15 22:55:55-ArithmethicApp-ERROR-Generic error
+2025-11-15 22:55:55-ArithmethicApp-ERROR-Division by zero error
+2025-11-15 22:55:55-ArithmethicApp-ERROR-Generic error
+2025-11-15 22:56:03-ArithmethicApp-DEBUG-Adding 10 + 15 = 25
+2025-11-15 22:56:03-ArithmethicApp-DEBUG-Subtract 15 - 10 = 5
+2025-11-15 22:56:03-ArithmethicApp-DEBUG-AddMultiply 10 * 20 = 200
+2025-11-15 22:56:03-ArithmethicApp-DEBUG-Divide 20 / 10 = 2.0
+2025-11-15 22:56:03-ArithmethicApp-ERROR-Division by zero error
