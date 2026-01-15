@@ -10,8 +10,8 @@ import csv
 # You can modify these variables as needed
 CHESSBOARD_SIZE = (8, 5)  # Number of inner corners per chessboard row and column
 SQUARE_SIZE = 15       # Size of a square in mm
-CALIBRATION_IMAGES_PATH = 'calib_images/*.png'  # Path to calibration images
-OUTPUT_DIRECTORY = 'output'  # Directory to save calibration results
+CALIBRATION_IMAGES_PATH = 'gopro_hero3/calib_images/*.jpg'  # Path to calibration images
+OUTPUT_DIRECTORY = 'gopro_hero3/output'  # Directory to save calibration results
 SAVE_UNDISTORTED = True   # Whether to save undistorted images
 
 def calibrate_camera():

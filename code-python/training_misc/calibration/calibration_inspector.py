@@ -8,7 +8,7 @@ from scipy.spatial.transform import Rotation
 from PIL import Image
 
 # Read camera poses
-poses_df = pd.read_csv('./output/camera_poses.csv')
+poses_df = pd.read_csv('./gopro_hero3/output/camera_poses.csv')
 print("Camera Poses:")
 print(poses_df)
 print()
@@ -28,7 +28,8 @@ for i in range(len(poses_df)):
     
     # Convert rotation vector to rotation matrix
     R = Rotation.from_rotvec(rvec).as_matrix()
-    
+
+        
     # Camera center in world coordinates: C = -R^T * t
     C_world = -R.T @ tvec
     camera_positions.append(C_world)
