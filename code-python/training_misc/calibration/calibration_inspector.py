@@ -8,7 +8,7 @@ from scipy.spatial.transform import Rotation
 from PIL import Image
 
 # Read camera poses
-poses_df = pd.read_csv('./gopro_hero3/output/camera_poses.csv')
+poses_df = pd.read_csv('./raspi_usb_cam/output/camera_poses.csv')
 print("Camera Poses:")
 print(poses_df)
 print()
@@ -112,9 +112,9 @@ fig = plt.figure(figsize=(12, 8))
 ax = fig.add_subplot(111, projection='3d')
 
 # Define chessboard dimensions
-num_squares_x = 9  # Number of squares along X
-num_squares_y = 6  # Number of squares along Y
-square_size = 15    # mm
+num_squares_x = 11  # Number of squares along X
+num_squares_y = 8  # Number of squares along Y
+square_size = 22    # mm
 
 
 checkerboard_width = num_squares_x * square_size
@@ -169,7 +169,7 @@ draw_chessboard_3d(ax, num_squares_x, num_squares_y, square_size, z=0)
 
 # Plot chessboard frame
 ax.scatter(0, 0, 0, c='blue', marker='^', s=200, label='Chessboard')
-axis_length = 20
+axis_length = 50
 ax.quiver(0, 0, 0, axis_length, 0, 0, color='red', arrow_length_ratio=0.05)
 ax.quiver(0, 0, 0, 0, axis_length, 0, color='green', arrow_length_ratio=0.05)
 ax.quiver(0, 0, 0, 0, 0, axis_length, color='blue', arrow_length_ratio=0.05)
@@ -183,7 +183,7 @@ for i in range(len(camera_positions)):
     ax.scatter(pos[0], pos[1], pos[2], c='red', marker='o', s=50)
     
     # Camera axes (showing where camera is looking)
-    axis_len = 25
+    axis_len = 40
     # Camera's X, Y, Z axes in world frame
     x_axis = R_world @ np.array([axis_len, 0, 0])
     y_axis = R_world @ np.array([0, axis_len, 0])

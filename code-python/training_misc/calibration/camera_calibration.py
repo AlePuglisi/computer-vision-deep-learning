@@ -8,10 +8,10 @@ import csv
 
 # Camera calibration parameters
 # You can modify these variables as needed
-CHESSBOARD_SIZE = (8, 5)  # Number of inner corners per chessboard row and column
-SQUARE_SIZE = 15       # Size of a square in mm
-CALIBRATION_IMAGES_PATH = 'gopro_hero3/calib_images/*.jpg'  # Path to calibration images
-OUTPUT_DIRECTORY = 'gopro_hero3/output'  # Directory to save calibration results
+CHESSBOARD_SIZE = (10, 7)  # Number of inner corners per chessboard row and column
+SQUARE_SIZE = 22       # Size of a square in mm
+CALIBRATION_IMAGES_PATH = 'raspi_usb_cam/calib_images/*.jpg'  # Path to calibration images
+OUTPUT_DIRECTORY = 'raspi_usb_cam/output'  # Directory to save calibration results
 SAVE_UNDISTORTED = True   # Whether to save undistorted images
 
 def calibrate_camera():
@@ -85,8 +85,7 @@ def calibrate_camera():
     
     # Calibrate camera
     ret, mtx, dist, rvecs, tvecs = cv2.calibrateCamera(
-        objpoints, imgpoints, gray.shape[::-1], None, None
-    )
+        objpoints, imgpoints, gray.shape[::-1], None, None)
     
     # Save calibration results
     calibration_data = {
@@ -108,6 +107,8 @@ def calibrate_camera():
 
     print(f"Calibration complete! RMS re-projection error: {ret}")
     print(f"Results saved to {OUTPUT_DIRECTORY}")
+
+    calculate_reprojection_error(objpoints, imgpoints, mtx, dist, rvecs, tvecs)
     
     return ret, mtx, dist, rvecs, tvecs
 
