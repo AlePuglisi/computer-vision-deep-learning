@@ -3,11 +3,10 @@ import os
 
 
 # Capture parameters
-CAMERA_R_ID = 1  # Camera ID (usually 0 for built-in webcam)
+CAMERA_R_ID = 0  # Camera ID (usually 0 for built-in webcam)
 CAMERA_L_ID = 2  # Camera ID (usually 0 for built-in webcam)
 
 cam_name = 'isn'
-os.path.join()
 
 capR = cv2.VideoCapture(CAMERA_R_ID)
 capL = cv2.VideoCapture(CAMERA_L_ID)

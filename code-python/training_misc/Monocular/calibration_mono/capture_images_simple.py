@@ -3,10 +3,9 @@ import os
 
 
 # Capture parameters
-CAMERA_ID = 2  # Camera ID (usually 0 for built-in webcam)
+CAMERA_ID = 18  # Camera ID (usually 0 for built-in webcam)
 
 cam_name = 'gopro_hero3'
-os.path.join()
 
 cap = cv2.VideoCapture(CAMERA_ID)
 num = 0
